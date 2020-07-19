@@ -1,0 +1,17 @@
+
+
+
+.content {
+    grid-area: content;
+    background-color: cadetblue;
+
+}
+
+.item {
+    color: red;
+
+ }
+
+
+
+
