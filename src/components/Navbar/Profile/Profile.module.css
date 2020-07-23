@@ -3,12 +3,18 @@
 
 .content {
     grid-area: content;
-    background-color: cadetblue;
+    background-color: brown;
 
 }
 
+.content img {
+    width: 1120px;
+    height: 450px;
+    margin: 5px;
+    border-radius: 30px;
 
+}
 
-
-
-
+.textredact {
+    color: white;
+}

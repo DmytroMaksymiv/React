@@ -9,10 +9,14 @@ const Profile = () => {
                 <img
                     src='https://img.championat.com/s/735x490/news/big/p/z/samaja-seksualnaja-sportsmenka-mira-pokazala-foto-v_1592462937537164433.jpg'/>
             </div>
-            <div>
-                Avatar+Discription
+            <div className={s.textredact}>
+                <center>
+                    <h2> Avatar+Discription</h2>
+                </center>
             </div>
+
             <MyPosts hey='YO'/>
+
         </div>
     );
 }

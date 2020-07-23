@@ -5,7 +5,7 @@ import Post from "./Post/Post";
 const MyPosts = (props) => {
 debugger;
     return (
-        <div>
+        <div className={s.MyPosts}>
             <div>
                 My Posts
             </div>
@@ -21,7 +21,10 @@ debugger;
                 <Post message="We ned JSX Developer" like="405" location='Spas' company='Kuzdei Inc'/>
                 <Post
                     message="We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood/ Whats wrong with you to day?Heeey ..We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood"
-                    like="85" location='Spas' company='Kuzdei Inc'/>
+                    like="85" location='Hrabiv' company='VOVA BABIN Inc'/>
+                <Post
+                    message="We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood/ Whats wrong with you to day?Heeey ..We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood We ned JSX Developer Lorem23. BJSKere movi2 / Hellow Hany moon. Nice mood"
+                    like="81125" location='Roznativ' company='Spaser Z LLC'/>
 
             </div>
         </div>
