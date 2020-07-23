@@ -12,5 +12,22 @@
 
 }
 
+.PostBorder {
+    border-color: black;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 15px;
 
 
+    background-color: orange;
+
+
+    padding: 25px;
+    margin: 10px;
+
+}
+
+.TextPostRight {
+    padding-left: 350px;
+
+}

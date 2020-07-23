@@ -12,7 +12,7 @@ const Profile = () => {
             <div>
                 Avatar+Discription
             </div>
-            <MyPosts/>
+            <MyPosts hey='YO'/>
         </div>
     );
 }
