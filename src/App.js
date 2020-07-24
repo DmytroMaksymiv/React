@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Navbar/Profile/Profile";
 import Footer from "./components/Footer/Footer";
+import Dialogs from "./components/Dialogs/Dialogs";
 
 
 const App = () => {
@@ -12,7 +13,10 @@ const App = () => {
 
             <Header/>
             <Navbar/>
-            <Profile/>
+            {/*<Profile/>*/}
+            <div className='app-wraper-content'>
+                <Dialogs/>
+            </div>
             <Footer/>
         </div>
     );

@@ -8,3 +8,10 @@
     grid-gap: 1px;
 
 }
+
+
+.app-wraper-content {
+    grid-area: content;
+    background-color: brown;
+
+}
