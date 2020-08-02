@@ -17,7 +17,7 @@
 }
 
 .item a.activeLink {
-    color: gold;
+    color: darkred;
     border-color: black;
     border-width: 3px;
     border-style: solid;
