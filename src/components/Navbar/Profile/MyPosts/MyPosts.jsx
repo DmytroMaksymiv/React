@@ -3,14 +3,16 @@ import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 const MyPosts = (props) => {
-debugger;
+    debugger;
     return (
         <div className={s.MyPosts}>
             <div>
-                My Posts
+                <h2> My Posts </h2>
             </div>
             <div>
                 <textarea></textarea>
+            </div>
+            <div>
                 <button>Add Post</button>
             </div>
             <div className={s.posts}>

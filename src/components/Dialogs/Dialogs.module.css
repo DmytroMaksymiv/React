@@ -6,8 +6,13 @@
 
 .dialogsItems {
     padding: 10px;
-
 }
+
+.dialog a {
+    color:cyan;
+    text-decoration: none;
+}
+
 
 .dialogsItems .active {
     color: gold;
