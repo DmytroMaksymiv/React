@@ -23,7 +23,7 @@ const Message = (props) => {
 
 const Dialogs = (props) => {
 
-    let dialogsData = [
+    let dialogs = [
         {id: 1, name: 'Dmytro'},
         {id: 2, name: 'Irinka'},
         {id: 3, name: 'Snizanna'},
@@ -34,7 +34,7 @@ const Dialogs = (props) => {
         {id: 8, name: 'Taras'},
     ]
 
-    let messagesData = [
+    let messages = [
         {id: 1, message: 'Hello'},
         {id: 2, message: 'How are your'},
         {id: 3, message: 'Very Nice'},
@@ -45,37 +45,32 @@ const Dialogs = (props) => {
         {id: 8, message: 'I\'m done'},
     ]
 
+
+    let dialogsElements = dialogs.map( dialog => <DialogItem name={dialog.name} id={dialog.id} /> );
+
+   /* let dialogsElements = dialogs.map( (dialog) => { <DialogItem name={dialog.name} id={dialog.id}/> });*/
+
+    let messagesElements = messages.map( message => <Message message={message.message} /> );
+
+
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
                 <h1>
-                    <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>
-                    <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>
-                    <DialogItem name={dialogsData[2].name} id={dialogsData[2].id}/>
-                    <DialogItem name={dialogsData[3].name} id={dialogsData[3].id}/>
-                    <DialogItem name={dialogsData[4].name} id={dialogsData[4].id}/>
-                    <DialogItem name={dialogsData[5].name} id={dialogsData[5].id}/>
-                    <DialogItem name={dialogsData[6].name} id={dialogsData[6].id}/>
-                    <DialogItem name={dialogsData[7].name} id={dialogsData[7].id}/>
+                    {dialogsElements}
                 </h1>
             </div>
 
 
             <div className={s.messages}>
                 <h1>
-                    <Message message={messagesData[0].message}/>
-                    <Message message={messagesData[1].message}/>
-                    <Message message={messagesData[2].message}/>
-                    <Message message={messagesData[3].message}/>
-                    <Message message={messagesData[4].message}/>
-                    <Message message={messagesData[5].message}/>
-                    <Message message={messagesData[6].message}/>
-                    <Message message={messagesData[7].message}/>
+                    {messagesElements}
                 </h1>
             </div>
 
         </div>
     );
 }
+
 
 export default Dialogs;

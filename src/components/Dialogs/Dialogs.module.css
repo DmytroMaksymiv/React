@@ -6,10 +6,11 @@
 
 .dialogsItems {
     padding: 10px;
+
 }
 
 .dialog a {
-    color:cyan;
+    color: cyan;
     text-decoration: none;
 }
 
@@ -24,6 +25,7 @@
 }
 
 .messages .message {
+
 
 }
 

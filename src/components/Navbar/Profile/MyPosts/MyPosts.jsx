@@ -4,7 +4,7 @@ import Post from "./Post/Post";
 
 const MyPosts = (props) => {
 
-    let postData = [
+    let posts = [
         {id: 1, message: 'Hi, how are you?', like: 445458, location: 'Lviv', company:'Wokreyn'},
         {id: 2, message: 'It\'s my first post', like: 5678944467, location: 'Kyiv', company:'Start Up Forum'},
         {id: 3, message: 'It\'s very nice funktion props', like: 567, location: 'Uzgorod', company:'Mariana company'},
@@ -19,6 +19,8 @@ const MyPosts = (props) => {
     ]
 
 
+    let postsElements = posts.map( post => <Post message={post.message} like={post.like} location={post.location} company={post.company}/> );
+
     return (
         <div className={s.MyPosts}>
             <div>
@@ -31,14 +33,7 @@ const MyPosts = (props) => {
                 <button>Add Post</button>
             </div>
             <div className={s.posts}>
-                <Post message={postData[0].message} like={postData[0].like} location={postData[0].location} company={postData[0].company}/>
-                <Post message={postData[1].message} like={postData[1].like} location={postData[1].location} company={postData[1].company}/>
-                <Post message={postData[2].message} like={postData[2].like} location={postData[2].location} company={postData[2].company}/>
-                <Post message={postData[3].message} like={postData[3].like} location={postData[3].location} company={postData[3].company}/>
-                <Post message={postData[4].message} like={postData[4].like} location={postData[4].location} company={postData[4].company}/>
-                <Post message={postData[5].message} like={postData[5].like} location={postData[5].location} company={postData[5].company}/>
-                <Post message={postData[6].message} like={postData[6].like} location={postData[6].location} company={postData[6].company}/>
-                <Post message={postData[7].message} like={postData[7].like} location={postData[7].location} company={postData[7].company}/>
+                {postsElements}
             </div>
         </div>
 
