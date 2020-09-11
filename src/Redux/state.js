@@ -1,14 +1,16 @@
-
-
-
-
 let state = {
 
     profilePage: {
         posts: [
             {id: 1, message: 'Hi, how are you?', like: 445458, location: 'Lviv', company: 'Wokreyn'},
             {id: 2, message: 'It\'s my first post', like: 5678944467, location: 'Kyiv', company: 'Start Up Forum'},
-            {id: 3, message: 'It\'s very nice funktion props', like: 567, location: 'Uzgorod', company: 'Mariana company'},
+            {
+                id: 3,
+                message: 'It\'s very nice funktion props',
+                like: 567,
+                location: 'Uzgorod',
+                company: 'Mariana company'
+            },
             {id: 4, message: 'By in Fokstrot', like: 431, location: 'Rivne', company: 'Appler'},
             {id: 5, message: 'We ned JSX Developer', like: 1141, location: 'Spas', company: 'Kuzdei Inc'},
             {
@@ -57,9 +59,22 @@ let state = {
     }
 
 
-
-
 }
 
+export let addPost = (postMessage) => {
+
+
+    let newPost = {
+        id: 9,
+        message: postMessage,
+        like: 0,
+        location: 'Down Town',
+        company: 'MI-MI'
+    };
+
+
+    state.profilePage.posts.push(newPost);
+
+}
 
 export default state;
