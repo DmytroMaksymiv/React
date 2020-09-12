@@ -1,4 +1,9 @@
+import {rerenderEntireTree} from "../render";
+
+
 let state = {
+
+
 
     profilePage: {
         posts: [
@@ -29,7 +34,8 @@ let state = {
             },
             {id: 8, message: 'It\'s done', like: 401, location: 'Roznativ', company: 'Spaser Z LLC'},
 
-        ]
+        ],
+        newPostText: 'it-camasutra.com'
 
     },
 
@@ -61,19 +67,30 @@ let state = {
 
 }
 
-export let addPost = (postMessage) => {
+window.state = state;
+
+export let addPost = () => {
 
 
     let newPost = {
         id: 9,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         like: 0,
-        location: 'Down Town',
-        company: 'MI-MI'
+        location: '',
+        company: ''
     };
 
 
     state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+
+}
+
+export let updateNewPostText = (newText) => {
+
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
 
 }
 
