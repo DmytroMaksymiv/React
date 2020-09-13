@@ -68,7 +68,7 @@ let state = {
     }
 
 
-}
+};
 
 window.state = state;
 
@@ -81,6 +81,7 @@ export const addPost = () => {
         like: 0,
         location: '',
         company: ''
+
     };
 
 
