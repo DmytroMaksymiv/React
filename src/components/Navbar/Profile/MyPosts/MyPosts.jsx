@@ -12,7 +12,7 @@ const MyPosts = (props) => {
 
 
     let addPost = () => {
-
+        debugger;
         props.addPost ();
 
     }
