@@ -62,10 +62,12 @@ let store = {
                 {id: 6, message: 'I like BigBurger'},
                 {id: 7, message: 'Nice to met you'},
                 {id: 8, message: 'I\'m done'},
-            ]
+            ],
+
+            newMessageBody: ""
 
         },
-            newMessageBody: "",
+
 
         sidebar: {}
 
