@@ -3,34 +3,13 @@ import styles from "./users.module.css";
 
 let Users = (props) => {
     if (props.users.length === 0) {
-        props.setUsers(
-            [
-                {
-                    id: 1,
-                    photoUrl: 'https://img.championat.com/s/735x490/news/big/p/z/samaja-seksualnaja-sportsmenka-mira-pokazala-foto-v_1592462937537164433.jpg',
-                    followed: false,
-                    fullName: 'Dmytro',
-                    status: 'I am a boss',
-                    location: {city: 'Lviv', country: 'Ukraine'}
-                },
-                {
-                    id: 2,
-                    photoUrl: 'https://img.championat.com/s/735x490/news/big/p/z/samaja-seksualnaja-sportsmenka-mira-pokazala-foto-v_1592462937537164433.jpg',
-                    followed: true,
-                    fullName: 'Alina',
-                    status: 'I am a boss too',
-                    location: {city: 'New York', country: 'USA'}
-                },
-                {
-                    id: 3,
-                    photoUrl: 'https://img.championat.com/s/735x490/news/big/p/z/samaja-seksualnaja-sportsmenka-mira-pokazala-foto-v_1592462937537164433.jpg',
-                    followed: false,
-                    fullName: 'Kata',
-                    status: 'I am a boss too',
-                    location: {city: 'London', country: 'Great Britain'}
-                }
-            ]
-        )
+
+        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+
+            props.setUsers()
+        });
+
+
     }
 
     return (
