@@ -11,7 +11,6 @@
 .selectedPage {
     font-weight: bold;
 
-
     color: darkred;
     border-color: black;
     border-width: 3px;
@@ -28,6 +27,6 @@
 
 .ollPages {
 
-    margin: 25px;
+    margin: 23px;
 
 }
