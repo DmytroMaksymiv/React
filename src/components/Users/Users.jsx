@@ -3,10 +3,13 @@ import styles from "./users.module.css";
 import * as axios from 'axios';
 import userPhoto from '../../asets/images/user1.png';
 
+
+
 class Users extends React.Component {
     constructor(props) {
         super(props);
     }
+
 
     componentDidMount() {
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`).then(response => {
