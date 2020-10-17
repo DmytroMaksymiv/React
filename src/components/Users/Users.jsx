@@ -5,7 +5,6 @@ import {NavLink} from "react-router-dom";
 import * as axios from 'axios';
 
 
-
 let Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -14,7 +13,6 @@ let Users = (props) => {
     for (let i = 1; i <= pagesCount; i++) {
         pages.push(i);
     }
-
 
     return <div>
         <div className={styles.ollPages}>
@@ -56,7 +54,6 @@ let Users = (props) => {
                                                 props.unfollow(u.id);
                                             }
                                         });
-
 
 
                             }}>Unfollow</button>
