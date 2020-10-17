@@ -54,7 +54,6 @@ class UsersContainer extends React.Component {
     }
 }
 
-
 let mapStateToProps = (state) => {
     return {
         users: state.usersPage.users,
