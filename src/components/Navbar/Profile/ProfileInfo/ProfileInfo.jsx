@@ -23,7 +23,7 @@ const ProfileInfo = (props) => {
                 </center>
             </div>
             <center>
-                <h2><ProfileStatus status={"Hello My Social Network"}/></h2>
+                <h2><ProfileStatus status={"Hello in My Social Network !!!"}/></h2>
             </center>
         </div>
     );
