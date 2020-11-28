@@ -13,3 +13,9 @@
     color: red;
 
 }
+
+.formSummaryError {
+    border: red 10px solid;
+    padding: 5px;
+    color: yellow;
+}

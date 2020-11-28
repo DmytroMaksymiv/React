@@ -48,7 +48,7 @@ const MyPosts = (props) => {
             <AddNewPostFormRedux onSubmit={onAddPost}/>
 
 
-            <div className={s.posts}>
+            <div className={s.post}>
                 {postsElements}
             </div>
 
