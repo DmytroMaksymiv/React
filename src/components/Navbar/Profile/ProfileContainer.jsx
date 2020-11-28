@@ -2,9 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import {connect} from "react-redux";
 import {getUserProfile} from "./../../../Redux/profile-reduser";
-import {Redirect, withRouter} from "react-router-dom";
-import {usersAPI} from "../../../api/api";
-import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
+import { withRouter} from "react-router-dom";
 import {compose} from "redux";
 import {getStatus, updateStatus} from "../../../Redux/profile-reduser";
 
@@ -17,6 +15,9 @@ class ProfileContainer extends React.Component {
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = this.props.authorizedUserId;
+            if(!userId) {
+                this.props.history.push("/login");  //take robutu duze ridko - intrasting ficha
+            }
         }
 
         this.props.getUserProfile(userId);

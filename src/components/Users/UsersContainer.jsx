@@ -7,10 +7,8 @@ import {
     toggleFollowingProgress,
     getUsers
 } from "../../Redux/users-reduser";
-import * as axios from 'axios';
 import Users from "./Users";
 import Preloader from "./../common/Preloader/Preloader";
-import {usersAPI} from "../../api/api";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
@@ -92,6 +90,6 @@ let mapDispatchToProps = (dispatch) => {
 
 
 export default compose(
-    withAuthRedirect,
+   // withAuthRedirect,    - zahust users page
     connect(mapStateToProps, {follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers})
 ) (UsersContainer);
