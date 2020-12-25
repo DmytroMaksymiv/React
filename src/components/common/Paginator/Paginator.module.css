@@ -1,0 +1,24 @@
+
+
+.selectedPage {
+    font-weight: bold;
+
+    color: darkred;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+
+    padding: 8px;
+    margin: 3px;
+
+    background-color: orange;
+
+
+}
+
+.ollPages {
+
+    margin: 23px;
+
+}

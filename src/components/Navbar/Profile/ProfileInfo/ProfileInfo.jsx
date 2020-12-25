@@ -5,26 +5,21 @@ import ProfileStatus from "./ProfileStatus";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 
-const ProfileInfo = (props) => {
+const ProfileInfo = ({profile, status, updateStatus}) => {
 
-    if (!props.profile) {
+    if (!profile) {
         return <Preloader/>
     }
 
-
     return (
         <div>
-            {/*<div>
-                <img
-                    src='https://img.championat.com/s/735x490/news/big/p/z/samaja-seksualnaja-sportsmenka-mira-pokazala-foto-v_1592462937537164433.jpg'/>
-            </div>*/}
             <div className={s.textredact}>
                 <center>
-                    <img src={props.profile.photos.large}/>
+                    <img src={profile.photos.large}/>
                 </center>
             </div>
             <center>
-                <h2><ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/></h2>
+                <h2><ProfileStatusWithHooks status={status} updateStatus={updateStatus}/></h2>
             </center>
         </div>
     );
