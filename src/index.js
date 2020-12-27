@@ -1,26 +1,19 @@
 import * as serviceWorker from './serviceWorker';
-import store from "./Redux/redux-store";
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import SamuraiJSApp from "./App";
+/*import App from './App';
 import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
+import store from "./Redux/redux-store";
+import {BrowserRouter} from "react-router-dom";*/
 
 
 /*setInterval( () => {
     store.dispatch({type: "FAKE"})
 }, 1000);*/
 
-ReactDOM.render(
-    <BrowserRouter>
-        <Provider store={store}>
-            <React.StrictMode>
-                <App/>
-            </React.StrictMode>
-        </Provider>
-    </BrowserRouter>, document.getElementById('root'));
+ReactDOM.render(<SamuraiJSApp />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
