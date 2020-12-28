@@ -1,5 +1,4 @@
 
-
 .selectedPage {
     font-weight: bold;
 
@@ -14,11 +13,27 @@
 
     background-color: orange;
 
-
 }
 
 .ollPages {
 
     margin: 23px;
+
+}
+.paginator {
+    margin: 10px;
+}
+
+.pageNumber {
+    padding: 8px;
+    border: 0px solid black;
+}
+
+.pageNumber.selectedPage {
+    font-weight: bold;
+    border-color: black;
+}
+
+.cn {
 
 }

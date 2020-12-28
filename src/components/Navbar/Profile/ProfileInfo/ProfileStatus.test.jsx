@@ -5,7 +5,7 @@ import ProfileStatus from "./ProfileStatus";
 
 describe("ProfileStatus component", () => {
     test("status from props should be in the state", () => {
-        const component = create(<ProfileStatus text="it-camasutra.com" />);
+        const component = create(<ProfileStatus status="it-camasutra.com" />);
         const instance = component.getInstance();
         expect(instance.state.status).toBe("it-camasutra.com");
     });
@@ -48,7 +48,7 @@ describe("ProfileStatus component", () => {
         const component = create(<ProfileStatus status="it-camasutra.com" updateStatus={mockCallback} />);
         const instance = component.getInstance();
         instance.deactivateEditMode();
-        expect(mockCallback.mock.calls.length ).toBe(1);
+        expect(mockCallback.mock.calls.length ) .toBe(1);
     });
 
 
